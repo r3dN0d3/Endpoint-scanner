@@ -29,14 +29,14 @@ pip install requests urllib3 colorama
 > sudo pacman -S tk
 > ```
 
-El archivo `symfony_scanner_gui.py` es **completamente standalone** — no necesita `main.py` ni ningún otro archivo externo.
+El archivo `endpointscanner.py` es **completamente standalone**.
 
 ---
 
-## Uso GUI (`symfony_scanner_gui.py`)
+## Uso GUI (`endpointscanner.py`)
 
 ```bash
-python symfony_scanner_gui.py
+python endpointscanner.py
 ```
 
 Abre la interfaz gráfica. No necesita ningún otro archivo.
@@ -138,7 +138,7 @@ Cuando un endpoint con placeholders devuelve `200`, el escáner genera variantes
 ## Uso con Burp Suite
 
 ```bash
-python main.py https://ejemplo.com \
+python endpointscanner.py https://ejemplo.com \
   --proxy http://127.0.0.1:8080 \
   --insecure \
   --threads 5
