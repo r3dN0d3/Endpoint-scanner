@@ -1,4 +1,4 @@
-# ☠ EndpointScanner GUI — symfony_scanner_gui.py
+# ☠ EndpointScanner GUI 
 
 ---
 
