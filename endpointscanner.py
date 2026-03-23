@@ -31,7 +31,7 @@ FG="#e0e0e0";FG2="#777777"
 FONT_MONO=("Courier New",10);FONT_SM=("Courier New",9)
 
 # ══════════════════════════════════════════════
-#  RUTAS — copiadas exactas de main.py
+#  RUTAS — 
 # ══════════════════════════════════════════════
 COMMON_PATHS: List[str] = [
     "/js/fos_js_routes.json","/.docs/vams-api.md","/.docs/vams-webhooks.md",
@@ -144,7 +144,7 @@ def gen_backup_candidates() -> List[str]:
     return uniq
 
 # ══════════════════════════════════════════════
-#  PLACEHOLDERS & FUZZ — copiados exactos
+#  PLACEHOLDERS & FUZZ 
 # ══════════════════════════════════════════════
 PLACEHOLDER_RE=re.compile(r"\{([A-Za-z_][A-Za-z0-9_]*)\}")
 SEED_VALUES: Dict[str,str]={"id":"1","token":"abcdef1234","slug":"test-slug",
@@ -184,7 +184,7 @@ def gen_fuzz_variants(tmpl,keys,limit):
     return out
 
 # ══════════════════════════════════════════════
-#  HTTP — copiado exacto de main.py
+#  HTTP 
 # ══════════════════════════════════════════════
 class RateLimiter:
     def __init__(self,rps):
@@ -368,7 +368,7 @@ def save_results(results,out_path,fmt):
             for r in results:w.writerow(r)
 
 # ══════════════════════════════════════════════
-#  SCANNER CORE — misma lógica que main()
+#  SCANNER CORE 
 # ══════════════════════════════════════════════
 class Scanner:
     def __init__(self,cfg,log_q,result_q):
